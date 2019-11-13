@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{blogs.author}}的博客</title>
+<style>
+    .box{
+    text-align: center;
+    }
+    .center{
+
+    width: 800px;  /*宽度300px*/
+    height: 300px;  /*高度50px*/
+    background: #CCCCCC;  /*背景颜色灰色*/
+    vertical-align: middle;
+}
+</style>
+
+</head>
+<body>
+<header>
+<div class="box">
+    <h1>{{blogs.author}}的博客</h1>
+    <hr>
+
+</div>
+
+    <div class=" col-md-8">
+    <h2>{{blogs.title}}</h2>
+
+    <div class="row">
+      <div class=" col-md-12 col-xs-12 center">
+        <p >
+            <span >{{blogs.author}}</span>
+            <span style="margin-left:20px; float:right">{{blogs.create_time}}</span>
+        </p>
+        <fieldset style="width:700px;height:200px;">
+            <legend>{{blogs.author}}</legend>
+            <div style="margin-left:30px;float:left">{{blogs.body}}</div>
+        </fieldset>
+    </div>
+
+    </div>
+
+    </div>
+</header>
+
+
+<div id="footer" style="background-color:black;clear:both;text-align:center;"><img src="">
+<footer id="site-footer">
+    <div class="container box" >
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright">&copy 2019 - Collect from <a href="http://www.cssmoban.com/"
+                                                                  target="_blank" title="模板之家">模板之家</a>
+                    - Modified by <a href="#" title="网页模板" target="_blank">{{blogs.author}}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>
